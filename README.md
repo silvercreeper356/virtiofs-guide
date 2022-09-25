@@ -76,5 +76,6 @@ This is useful for adding other filesystems that aren't already in your shared f
 
 mkdir NAME
 sudo mount -o bind /SOURCE /DEST
+
 UNMOUNT using
 sudo umount /DEST
