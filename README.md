@@ -93,3 +93,12 @@ sudo mount -o bind /SOURCE /DEST
 
 UNMOUNT using
 sudo umount /DEST
+
+SPEED:
+
+Warning that using this method and virtiofs is SLOW, you will NOT get high speeds
+
+Speed comparison of a Gen 3 NVMe SSD to it passed through with virtiofs:
+
+![ImageGlass_tgNayqOLvJ](https://user-images.githubusercontent.com/76752846/192169653-0584928a-41ad-4d6c-9864-63bb161d73ca.png)
+
