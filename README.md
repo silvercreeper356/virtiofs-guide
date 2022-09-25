@@ -21,5 +21,6 @@ Open XML tab and paste in this (You might have to enable XML Editing)
       
 Press Finish 
 
-Step 2: Guest
 ![2022-09-25_17-59](https://user-images.githubusercontent.com/76752846/192167448-6b037e37-4739-4c3f-a6d6-0c39c637c4a7.png)
+
+Step 2: Guest
