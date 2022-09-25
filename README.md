@@ -102,3 +102,8 @@ Speed comparison of a Gen 3 NVMe SSD to it passed through with virtiofs:
 
 ![ImageGlass_tgNayqOLvJ](https://user-images.githubusercontent.com/76752846/192169653-0584928a-41ad-4d6c-9864-63bb161d73ca.png)
 
+Sources:
+
+https://www.reddit.com/r/VFIO/comments/wpw1bj/how_do_i_setup_file_sharing_between_my_hostarch/
+
+https://www.mail-archive.com/virtio-fs@redhat.com/msg02246.html
