@@ -70,3 +70,11 @@ You should be able to open your Host Z: drive in windows
 ![chrome_kynQ7aJBRH](https://user-images.githubusercontent.com/76752846/192168134-a82191f8-1dde-4914-acbc-39fb1af940e1.png)
 
 If you can't then make sure VirtIO-FS Services is running
+
+Step 5 (Extra): Mounting an existing folder to your shared folder
+This is useful for adding other filesystems that aren't already in your shared folder
+
+mkdir NAME
+sudo mount -o bind /SOURCE /DEST
+UNMOUNT using
+sudo umount /DEST
