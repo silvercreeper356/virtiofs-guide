@@ -36,6 +36,37 @@ latest download: https://github.com/billziss-gh/winfsp/releases/latest
 ![msiexec_OeWhd25rQx](https://user-images.githubusercontent.com/76752846/192167786-b55f3760-0dc5-481d-9d2d-1ef8676474c2.png)
 
 Step 3: Install virtio storage drivers
+
 !!!!ONLY IF You dont have virtio storage drivers already installed!!!!
 
+Download latest virtio-win ISO: https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/stable-virtio/virtio-win.iso
 
+Mount ISO in Windows:
+![chrome_ztyax7jRKS](https://user-images.githubusercontent.com/76752846/192167916-148cb231-2c81-4982-a925-c6738957210f.png)
+
+Open Device Manager > Other Devices > Right click 'Mass Storage Controller' > Update Driver
+![chrome_8diRh5b8yN](https://user-images.githubusercontent.com/76752846/192167960-56dd218c-8642-4ea2-afba-3aa00cbee4e5.png)
+
+Click 'Browse my computer for drivers' then 'Browse'
+Pick your mounted ISO and click OK
+![chrome_VumkFnsjsV](https://user-images.githubusercontent.com/76752846/192167991-209d84ba-d107-4f34-992c-f37a358d4a75.png)
+
+Windows should install drivers, click Close
+(You might want to install drivers for any other virtio devices)
+
+Step 4: Manually start Virtio-FS Service
+
+Open 'Run' (Windows Key + R) and run 'Services.msc'
+![explorer_0Ylj3FjGGB](https://user-images.githubusercontent.com/76752846/192168057-506b0ff2-468d-4091-a7df-3aee4a43a93f.png)
+
+Scroll down to 'Virtio-FS Service' > Open properties
+
+Set 'Startup type' to Automatic and press 'Start' then 'Apply'
+![mmc_oKeCgqNHk0](https://user-images.githubusercontent.com/76752846/192168109-bcd79734-e84e-4d27-b2dc-a37deef37fb8.png)
+
+Reboot
+
+You should be able to open your Host Z: drive in windows
+![chrome_kynQ7aJBRH](https://user-images.githubusercontent.com/76752846/192168134-a82191f8-1dde-4914-acbc-39fb1af940e1.png)
+
+If you can't then make sure VirtIO-FS Services is running
