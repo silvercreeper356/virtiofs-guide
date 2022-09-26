@@ -1,11 +1,11 @@
 # virtiofs-guide
 Guide for using virtiofs to share a filesystem from a Linux host to a Windows guest.
 
-Video Guide: Cancel!!!!!
+No video guide
 
 This guide goes through setting up virtiofs to share files to a Windows guest. Also possible with Linux guests but this guide only covers Windows.
 
-Step 1: Configure in Virtual Machine Manager
+**Step 1: Configure in Virtual Machine Manager**
 
 Enable Shared Memory and Apply
 
@@ -13,18 +13,18 @@ Enable Shared Memory and Apply
 
 Go to Add Hardware > Filesystem
 Open XML tab and paste in this (You might have to enable XML Editing)
-
+```
         <filesystem type='mount' accessmode='passthrough'>
           <driver type='virtiofs' queue='1024'/>
           <source dir='/Path-to-Source'/>
           <target dir='share-name-in-guest'/>
         </filesystem>
-      
+```
 Press Finish 
 
 ![2022-09-25_17-59](https://user-images.githubusercontent.com/76752846/192167448-6b037e37-4739-4c3f-a6d6-0c39c637c4a7.png)
 
-Step 2: Install required guest software
+**Step 2: Install required guest software**
 
 Download and install virtio guest tools
 
@@ -40,9 +40,9 @@ latest download: https://github.com/billziss-gh/winfsp/releases/latest
 
 ![msiexec_OeWhd25rQx](https://user-images.githubusercontent.com/76752846/192167786-b55f3760-0dc5-481d-9d2d-1ef8676474c2.png)
 
-Step 3: Install virtio storage drivers
+**Step 3: Install virtio storage drivers**
 
-!!!!ONLY IF You dont have virtio storage drivers already installed!!!!
+***!!!!ONLY IF You dont have virtio storage drivers already installed!!!!***
 
 Download latest virtio-win ISO: https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/stable-virtio/virtio-win.iso
 
@@ -64,7 +64,7 @@ Windows should install drivers, click Close
 
 (You might want to install drivers for any other virtio devices)
 
-Step 4: Manually start Virtio-FS Service
+**Step 4: Manually start Virtio-FS Service**
 
 Open 'Run' (Windows Key + R) and run 'Services.msc'
 
@@ -84,15 +84,17 @@ You should be able to open your Host Z: drive in windows
 
 If you can't then make sure VirtIO-FS Services is running
 
-Step 5 (Extra): Mounting an existing folder to your shared folder
+**Step 5 (Extra): Mounting an existing folder to your shared folder**
 
 This is useful for adding other filesystems that aren't already in your shared folder
 
 mkdir NAME
-sudo mount -o bind /SOURCE /DEST
+
+```sudo mount -o bind /SOURCE /DEST```
 
 UNMOUNT using
-sudo umount /DEST
+
+```sudo umount /DEST```
 
 SPEED:
 
