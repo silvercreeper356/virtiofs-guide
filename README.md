@@ -1,7 +1,7 @@
 # virtiofs-guide
 Guide for using virtiofs to share a filesystem from a Linux host to a Windows guest.
 
-Video Guide: [WIP]
+Video Guide: Cancel!!!!!
 
 This guide goes through setting up virtiofs to share files to a Windows guest. Also possible with Linux guests but this guide only covers Windows.
 
