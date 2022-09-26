@@ -5,7 +5,22 @@ No video guide
 
 This guide goes through setting up virtiofs to share files to a Windows guest. Also possible with Linux guests but this guide only covers Windows.
 
-##Step 1: Configure in Virtual Machine Manager
+### Contents:
+
+
+ [1: Configure in Virtual Machine Manager](https://github.com/silvercreeper356/virtiofs-guide/edit/main/README.md#step-1-configure-in-virtual-machine-manager)
+ 
+ [2: Install required guest software](https://github.com/silvercreeper356/virtiofs-guide/edit/main/README.md#step-2-install-required-guest-software)
+ 
+ [3: Install virtio sotrage drivers](https://github.com/silvercreeper356/virtiofs-guide/edit/main/README.md#step-3-install-virtio-storage-drivers)
+ 
+ [4: Manually enable and start Virtio-FS Service](https://github.com/silvercreeper356/virtiofs-guide/edit/main/README.md#step-4-manually-enable-and-start-virtio-fs-service)
+ 
+ [5: Mounting an existing folder to your shared folder](https://github.com/silvercreeper356/virtiofs-guide/edit/main/README.md#step-5-extra-mounting-an-existing-folder-to-your-shared-folder)
+ 
+ [6: Speed](https://github.com/silvercreeper356/virtiofs-guide/edit/main/README.md#6-speed)
+ 
+## Step 1: Configure in Virtual Machine Manager
 
 Enable Shared Memory and Apply
 
@@ -24,7 +39,7 @@ Press Finish
 
 ![2022-09-25_17-59](https://user-images.githubusercontent.com/76752846/192167448-6b037e37-4739-4c3f-a6d6-0c39c637c4a7.png)
 
-##Step 2: Install required guest software
+## Step 2: Install required guest software
 
 Download and install virtio guest tools
 
@@ -40,7 +55,7 @@ latest download: https://github.com/billziss-gh/winfsp/releases/latest
 
 ![msiexec_OeWhd25rQx](https://user-images.githubusercontent.com/76752846/192167786-b55f3760-0dc5-481d-9d2d-1ef8676474c2.png)
 
-##Step 3: Install virtio storage drivers
+## Step 3: Install virtio storage drivers
 
 ***!!!!ONLY IF You dont have virtio storage drivers already installed!!!!***
 
@@ -64,7 +79,7 @@ Windows should install drivers, click Close
 
 (You might want to install drivers for any other virtio devices)
 
-##Step 4: Manually enable and start Virtio-FS Service
+## Step 4: Manually enable and start Virtio-FS Service
 
 Open 'Run' (Windows Key + R) and run 'Services.msc'
 
@@ -84,7 +99,7 @@ You should be able to open your Host Z: drive in Windows
 
 If you can't then make sure VirtIO-FS Services is running
 
-##Step 5 (Extra): Mounting an existing folder to your shared folder
+## Step 5 (Extra): Mounting an existing folder to your shared folder
 
 This is useful for adding other filesystems that aren't already in your shared folder
 
@@ -96,7 +111,7 @@ UNMOUNT using
 
 ```sudo umount /DEST```
 
-##SPEED:
+## 6: SPEED:
 
 Warning that using this method and virtiofs is SLOW, you will NOT get high speeds
 
