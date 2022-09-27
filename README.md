@@ -59,6 +59,8 @@ latest download: https://github.com/billziss-gh/winfsp/releases/latest
 
 ***!!!!ONLY IF You dont have virtio storage drivers already installed!!!!***
 
+If the drivers are already installed then skip to step 4
+
 Download latest virtio-win ISO: https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/stable-virtio/virtio-win.iso
 
 Mount ISO in Windows:
