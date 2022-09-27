@@ -8,17 +8,17 @@ This guide goes through setting up virtiofs to share files to a Windows guest. A
 ### Contents:
 
 
- [1: Configure in Virtual Machine Manager](https://github.com/silvercreeper356/virtiofs-guide/edit/main/README.md#step-1-configure-in-virtual-machine-manager)
+ [1: Configure in Virtual Machine Manager](https://github.com/silvercreeper356/virtiofs-guide#step-1-configure-in-virtual-machine-manager)
  
- [2: Install required guest software](https://github.com/silvercreeper356/virtiofs-guide/edit/main/README.md#step-2-install-required-guest-software)
+ [2: Install required guest software](https://github.com/silvercreeper356/virtiofs-guide#step-2-install-required-guest-software)
  
- [3: Install virtio sotrage drivers](https://github.com/silvercreeper356/virtiofs-guide/edit/main/README.md#step-3-install-virtio-storage-drivers)
+ [3: Install virtio sotrage drivers](https://github.com/silvercreeper356/virtiofs-guide#step-3-install-virtio-storage-drivers)
  
- [4: Manually enable and start Virtio-FS Service](https://github.com/silvercreeper356/virtiofs-guide/edit/main/README.md#step-4-manually-enable-and-start-virtio-fs-service)
+ [4: Manually enable and start Virtio-FS Service](https://github.com/silvercreeper356/virtiofs-guide#step-4-manually-enable-and-start-virtio-fs-service)
  
- [5: Mounting an existing folder to your shared folder](https://github.com/silvercreeper356/virtiofs-guide/edit/main/README.md#step-5-extra-mounting-an-existing-folder-to-your-shared-folder)
+ [5: Mounting an existing folder to your shared folder](https://github.com/silvercreeper356/virtiofs-guide#step-5-extra-mounting-an-existing-folder-to-your-shared-folder)
  
- [6: Speed](https://github.com/silvercreeper356/virtiofs-guide/edit/main/README.md#6-speed)
+ [6: Speed](https://github.com/silvercreeper356/virtiofs-guide#6-speed)
  
 ## Step 1: Configure in Virtual Machine Manager
 
